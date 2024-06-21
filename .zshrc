@@ -67,7 +67,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages)
+plugins=(git colored-man-pages command-time)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,3 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Homebrew packages available in shell
+export PATH=$PATH:/opt/homebrew/bin/
+
+# Syntax highlight
+zinit light z-shell/F-Sy-H
