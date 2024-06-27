@@ -119,3 +119,5 @@ autoload -Uz _zinit
 
 # Syntax highlight
 zinit light z-shell/F-Sy-H
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
