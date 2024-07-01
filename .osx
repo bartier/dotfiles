@@ -52,5 +52,5 @@ defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE h:mm:ss\""
 defaults write NSGlobalDomain com.apple.mouse.scaling -float "0.875"
 defaults write NSGlobalDomain com.apple.trackpad.scaling -float "2.5"
 
-# Functions keys behavior to standar keys
+# Functions keys behavior to standard keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
