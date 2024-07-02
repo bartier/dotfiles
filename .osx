@@ -40,16 +40,12 @@ defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true" && killall Fi
 # Home directory is opened in the fileviewer dialog when saving a new document
 defaults write NSGlobalDomain "NSDocumentSaveNewDocumentsToCloud" -bool "false"
 
-# Set menubar digital clock format
-defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE h:mm:ss\""
-
 # Mouse/trackpad values
 defaults write NSGlobalDomain com.apple.mouse.scaling -float "0.875"
 defaults write NSGlobalDomain com.apple.trackpad.scaling -float "2.5"
 
 # Functions keys behavior to standard keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
-
 
 for app in "cfprefsd" "Dock" "Finder" "SystemUIServer"; do
   killall "${app}" > /dev/null 2>&1
