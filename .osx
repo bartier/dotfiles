@@ -49,3 +49,8 @@ defaults write NSGlobalDomain com.apple.trackpad.scaling -float "2.5"
 
 # Functions keys behavior to standard keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
+
+for app in "cfprefsd" "Dock" "Finder" "SystemUIServer"; do
+  killall "${app}" > /dev/null 2>&1
+done
