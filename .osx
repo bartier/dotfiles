@@ -1,7 +1,7 @@
 # Inspired/Copied from https://github.com/geerlingguy/dotfiles/blob/master/.osx
 
 # Set Dock size
-defaults write com.apple.dock "tilesize" -int "36"
+defaults write com.apple.dock "tilesize" -int "45"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
